@@ -99,6 +99,8 @@
 		3439BC06DB711C9129F384BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DD97D331AB21FA900FE7A57 /* CoreLocation.framework */,
+				5DD97D351AB2239900FE7A57 /* MapKit.framework */,
 				8EA9A7466DD2A8650FB8BD44 /* libPods-GeoPix.a */,
 			);
 			name = Frameworks;
@@ -124,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				5D44A0381AB725AF00200BD2 /* images */,
-				5DD97D351AB2239900FE7A57 /* MapKit.framework */,
-				5DD97D331AB21FA900FE7A57 /* CoreLocation.framework */,
 				5DD97D0C1AB21E6D00FE7A57 /* GeoPix */,
 				5DD97D261AB21E6D00FE7A57 /* GeoPixTests */,
 				5DD97D0B1AB21E6D00FE7A57 /* Products */,
@@ -210,6 +210,7 @@
 				5DD97D071AB21E6D00FE7A57 /* Frameworks */,
 				5DD97D081AB21E6D00FE7A57 /* Resources */,
 				24FB71C3ED661D240A5D4FF2 /* Copy Pods Resources */,
+				0838E5ED368E616DB8ACDC58 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +311,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0838E5ED368E616DB8ACDC58 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoPix/Pods-GeoPix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		16BE0CC67F963957BA64BD7C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
